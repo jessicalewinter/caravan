@@ -9,6 +9,46 @@
     <title>Caravan</title>
 </head>
 <body>
+    <!--Open Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitle" 
+    aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLoginTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="loginEmail">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" 
+                            aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Remember Me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <small class="form-text text-muted">
+                            <a href="#">Forgot password?</a>
+                        </small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Close Modal -->
+
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow fixed-top">
         <a class="navbar-brand" href="index.html">
             <img src="img/caravan.svg" alt="Caravan Logo">
@@ -39,7 +79,9 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sign in</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">
+                        Sign in
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-outline-primary ml-md-2" href="signup.html">Sign up</a>
