@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Caravan</title>
+</head>
+<body>
+    <!--Open Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitle" 
+    aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLoginTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="loginEmail">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" 
+                            aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Remember Me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <small class="form-text text-muted">
+                            <a href="#">Forgot password?</a>
+                        </small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Close Modal -->
+
+    <!-- Nav -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/caravan.svg" alt="Caravan Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="active nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Places
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="places.html#dublin">Dublin</a>
+                        <a class="dropdown-item" href="places.html#losangeles">Los Angeles</a>
+                        <a class="dropdown-item" href="places.html#paris">Paris</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="plans.html">Plans</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">
+                        Sign in
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary ml-md-2" href="signup.html">Sign up</a>
+                </li>  
+            </ul> 
+        </div>
+    </nav>
+    <!-- Close Nav -->
+    <!-- Dublin -->
+
+    <section id="dublin" class="container my-5">
+            
+        <!-- Pictures -->
+
+        <div class="my-5 text-center">
+            <span class="h6 d-block text-uppercase">The best place to visit on your trip</span>
+            <h2 class="display-4 text-primary">Dublin</h2>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <img class="img-fluid mb-4" src="img/local/dublin-1.jpg" alt="Dublin-1">
+                <img class="img-fluid mb-4" src="img/local/dublin-2.jpg" alt="Dublin-2">
+                <img class="img-fluid mb-4" src="img/local/dublin-3.jpg" alt="Dublin-3">
+            </div>
+            <div class="col-md">
+                <img class="img-fluid mb-4" src="img/local/dublin-4.jpg" alt="Dublin-4">
+                <img class="img-fluid mb-4" src="img/local/dublin-5.jpg" alt="Dublin-5">
+            </div>
+            <div class="col-md">
+                <img class="img-fluid mb-4" src="img/local/dublin-6.jpg" alt="Dublin-6">
+                <img class="img-fluid mb-4" src="img/local/dublin-7.jpg" alt="Dublin-7">
+            </div>
+        </div>
+
+        <!-- Next events -->
+
+        <div class="my-5 text-center">
+            <span class="h6 d-block text-uppercase">Discover what happens in Dublin</span>
+            <h2 class="display-4 text-primary">Next Events</h2>
+        </div>
+        <table class="table table-hover table-responsive-md">
+            <thead>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Event</th>
+                    <th scope="col">Local</th>
+                    <th scope="col">Ticket</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">23/10</th>
+                    <td>Bon Iver</td>
+                    <td>Pantages Theatre</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm text-uppercase">Buy Ticket</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">23/10</th>
+                    <td>Bon Iver</td>
+                    <td>Pantages Theatre</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm text-uppercase">Buy Ticket</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">23/10</th>
+                    <td>Bon Iver</td>
+                    <td>Pantages Theatre</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm text-uppercase">Buy Ticket</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Close Dublin -->
+
+    <div class="dropdown-divider"></div>
+
+    <!-- Los Angeles -->
+
+    <section id="losangeles" class="container my-5">
+
+        <!-- Pictures -->
+
+        <div class="my-5 text-center">
+            <span class="h6 d-block text-uppercase">The best place to visit on your trip</span>
+            <h2 class="display-4 text-primary">Los Angeles</h2>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <img class="img-fluid mb-4" src="img/local/losangeles-1.jpg" alt="Los Angeles-1">
+                <img class="img-fluid mb-4" src="img/local/losangeles-2.jpg" alt="Los Angeles-2">
+                <img class="img-fluid mb-4" src="img/local/losangeles-3.jpg" alt="Los Angeles-3">
+            </div>
+            <div class="col-md">
+                <img class="img-fluid mb-4" src="img/local/losangeles-4.jpg" alt="Los Angeles-4">
+                <img class="img-fluid mb-4" src="img/local/losangeles-5.jpg" alt="Los Angeles-5">
+            </div>
+            <div class="col-md">
+                <img class="img-fluid mb-4" src="img/local/losangeles-6.jpg" alt="Los Angeles-6">
+                <img class="img-fluid mb-4" src="img/local/losangeles-7.jpg" alt="Los Angeles-7">
+            </div>
+        </div>
+
+        <!-- Next events -->
+
+        <div class="my-5 text-center">
+            <span class="h6 d-block text-uppercase">Discover what happens in LAX</span>
+            <h2 class="display-4 text-primary">Next Events</h2>
+        </div>
+        <table class="table table-hover table-responsive-md">
+            <thead>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Event</th>
+                    <th scope="col">Local</th>
+                    <th scope="col">Ticket</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">23/10</th>
+                    <td>Bon Iver</td>
+                    <td>Pantages Theatre</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm text-uppercase">Buy Ticket</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">23/10</th>
+                    <td>Bon Iver</td>
+                    <td>Pantages Theatre</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm text-uppercase">Buy Ticket</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">23/10</th>
+                    <td>Bon Iver</td>
+                    <td>Pantages Theatre</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm text-uppercase">Buy Ticket</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Close Los Angeles -->
+
+    <div class="dropdown-divider"></div>
+
+    <!-- Paris -->
+
+    <section id="paris" class="container my-5">
+        
+        <!-- Pictures -->
+
+        <div class="my-5 text-center">
+            <span class="h6 d-block text-uppercase">The best place to visit on your trip</span>
+            <h2 class="display-4 text-primary">Paris</h2>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <img class="img-fluid mb-4" src="img/local/paris-1.jpg" alt="Paris-1">
+                <img class="img-fluid mb-4" src="img/local/paris-2.jpg" alt="Paris-2">
+                <img class="img-fluid mb-4" src="img/local/paris-3.jpg" alt="Paris-3">
+            </div>
+            <div class="col-md">
+                <img class="img-fluid mb-4" src="img/local/paris-4.jpg" alt="Paris-4">
+                <img class="img-fluid mb-4" src="img/local/paris-5.jpg" alt="Paris-5">
+            </div>
+            <div class="col-md">
+                <img class="img-fluid mb-4" src="img/local/paris-6.jpg" alt="Paris-6">
+                <img class="img-fluid mb-4" src="img/local/paris-7.jpg" alt="Paris-7">
+            </div>
+        </div>
+
+        <!-- Next events -->
+
+        <div class="my-5 text-center">
+            <span class="h6 d-block text-uppercase">Discover what happens in Paris</span>
+            <h2 class="display-4 text-primary">Next Events</h2>
+        </div>
+        <table class="table table-hover table-responsive-md">
+            <thead>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Event</th>
+                    <th scope="col">Local</th>
+                    <th scope="col">Ticket</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">23/10</th>
+                    <td>Bon Iver</td>
+                    <td>Pantages Theatre</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm text-uppercase">Buy Ticket</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">23/10</th>
+                    <td>Bon Iver</td>
+                    <td>Pantages Theatre</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm text-uppercase">Buy Ticket</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">23/10</th>
+                    <td>Bon Iver</td>
+                    <td>Pantages Theatre</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm text-uppercase">Buy Ticket</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Close Paris -->
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6 text-uppercase">Pages</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="plans.html">Plans</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="signup.html">Sign up</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="h6 text-uppercase">Places</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="places.html#dublin">Dublin</a></li>
+                        <li><a href="places.html#losangeles">Los Angeles</a></li>
+                        <li><a href="places.html#paris">Paris</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h6 text-uppercase">Contact</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>caravan@caravan.com</li>
+                        <li>999999999</li>
+                        <li>Monday to Friday-8 AM to 6 PM</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 social">
+                    <h4 class="h6 text-uppercase">Social Network</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="btn btn-outline-secondary btn-sm mb-2 btn-block">
+                            Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-outline-secondary btn-sm mb-2 btn-block">
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-outline-secondary btn-sm mb-2 btn-block">
+                                Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary py-4">
+            <p class="text-center m-0">Caravan&copy; 2017. Some rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Close Footer -->
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

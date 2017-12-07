@@ -20,3 +20,9 @@ body{
 .social .btn{
     max-width: 140px;
 }
+.list-plan li + li{
+    border-top: 2px solid rgba(0,0,0,.02);
+}
+.list-plan li{
+    padding: 1rem;
+}
