@@ -74,13 +74,13 @@
                     </div>
                 </li>
                 
-                <li class="active nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="plans.html">Plans</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
-                <li class="nav-item">
+                <li class="active nav-item">
                     <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">
                         Sign in
                     </a>
@@ -93,15 +93,118 @@
     </nav>
     <!-- Close Nav -->
 
-    <!-- Planos -->
+    <!-- Contact Form -->
 
     <section class="container my-5">
         <div class="my-5 text-center">
-            <span class="h6 d-block text-uppercase">Your plan, your trip</span>
-            <h2 class="display-4 text-primary">Choose your plan</h2>
+            <span class="h6 d-block text-uppercase">Do you have any doubts</span>
+            <h2 class="display-4 text-primary">Talk to us</h2>
         </div>
         <div class="row">
-            <div class="col-md mb-5">
+            <form action="" class="col-lg-6">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="name" id="name" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="cpf">CPF</label>
+                        <input type="text" placeholder="555.555.555-55" id="cpf" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Your Email" id="email" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Your Password" id="password" class="form-control">
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="address">Address</label>
+                        <input type="text" placeholder="Street Name, number, i.e" id="address" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="city">City</label>
+                        <input type="text" placeholder="City" id="city" class="form-control">
+                    </div>
+                    <div class="form-group col-md-3 col-6">
+                        <label for="state">State</label>
+                        <select id="state" class="form-control">
+                            <option>Select state</option>
+                            <option>Ceará</option>
+                            <option>Rio de Janeiro</option>
+                            <option>São Paulo</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3 col-6">
+                        <label for="zip">ZIP code</label>
+                        <input type="text" placeholder="ZIP" id="zip" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group bg-light box-shadow p-3 rounded">
+                    <h2 class="h6 text-uppercase">Payment</h2>
+                    <nav class="nav btn-group mb-3" id="payment" role="tablist">
+                        <a class="active btn btn-secondary btn-sm" id="creditCard-tab" data-toggle="tab" href="#creditCard" role="tab" aria-controls="creditCard" aria-selected="true">Credit Card</a>
+                        <a class="btn btn-secondary btn-sm" id="payPal-tab" data-toggle="tab" href="#payPal" role="tab" aria-controls="payPal" aria-selected="false">Profile</a>
+                    </nav>
+                    <div class="tab-content" id="paymentContent">
+                        <div class="tab-pane fade show active" id="creditCard" role="tabpanel" aria-labelledby="creditCard-tab">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nameCard">Name on card</label>
+                                    <input type="text" placeholder="Name on card" id="nameCard" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="month">Month</label>
+                                    <select id="month" class="form-control">
+                                        <option>Expire on...</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="year">Year</label>
+                                    <select id="year" class="form-control">
+                                        <option>Expire on...</option>
+                                        <option>2018</option>
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                        <option>2023</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="cardNumber">Card Number</label>
+                                    <input type="text" placeholder="City" id="cardNumber" class="form-control">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="ccv">Security Code</label>
+                                    <input type="text" placeholder="xxx" id="ccv" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="payPal" role="tabpanel" aria-labelledby="payPal-tab">
+                            Click on hire plan then we'll send a ticket to your email.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    Accept the terms and conditions
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Hire Plan</button>
+            </form>
+
+            <div class="col-lg-5 mx-auto order-first order-lg-1 mb-5">
+                <h2 class="h6 text-uppercase text-primary">Chosen plane</h2>
                 <div class="bg-light box-shadow p-4 rounded">
                     <h2>Gold</h2>
                     <ul class="list-plan list-unstyled">
@@ -120,7 +223,7 @@
                             </select>
                         </div>
                     </form>
-                    <div class="row align-items-center mt-4">
+                    <div class="row mt-4">
                         <div class="col">
                             <a href="signup.html" class="btn btn-primary btn-lg btn-block">
                                 Buy Plan
@@ -132,40 +235,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md mb-5">
-                <div class="bg-light box-shadow p-4 rounded">
-                    <h2>Platinum <span class="badge badge-success">New</span></h2>
-                    <ul class="list-plan list-unstyled">
-                        <li>→ 60 days of trip</li>
-                        <li>→ 6 different destinations</li>
-                        <li>→ Everything paid by the company</li>
-                        <li>→ Tickets for parties</li>
-                    </ul>
-                    <form action="">
-                        <div class="form-group">
-                            <select class="form-control bg-light" id="inputCities">
-                                <option>Select city</option>
-                                <option>Dublin</option>
-                                <option>Los Angeles</option>
-                                <option>Paris</option>
-                            </select>
-                        </div>
-                    </form>
-                    <div class="row align-items-center mt-4">
-                        <div class="col">
-                            <a href="signup.html" class="btn btn-primary btn-lg btn-block">
-                                Buy Plan
-                            </a>
-                        </div>
-                        <div class="col">
-                            <span class="h4">$7500</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
-
 
     <!-- Footer -->
 
